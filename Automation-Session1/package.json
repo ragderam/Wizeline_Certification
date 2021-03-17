@@ -1,0 +1,26 @@
+{
+  "name": "assessment_session1",
+  "version": "1.0.0",
+  "description": "Session 1 Assesment Project",
+  "main": "index.js",
+  "scripts": {
+    "test-all-chrome": "testcafe chrome Page_Model/test/ --reporter  html:Page_Model/reports/Report.html",
+    "test-all-edge": "testcafe edge Page_Model/test/ --reporter  html:Page_Model/reports/Report.html",
+    "test-all-firefox": "testcafe firefox Page_Model/test/ --reporter  html:Page_Model/reports/Report.html",
+    "Login-test": "testcafe chrome ./Page_Model/test/LoginTest.js",
+    "Logout-test": "testcafe chrome ./Page_Model/test/LogoutTest.js",
+    "Shopping-cart": "testcafe chrome ./Page_Model/test/ShoppingCartTest.js",
+    "Checkout-test": "testcafe chrome ./Page_Model/test/CheckoutTest.js",
+    "Overview-test": "testcafe chrome ./Page_Model/test/OverviewTest.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edgar Ramirez Cervantes",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node": "^15.10.0",
+    "testcafe": "^1.12.0",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {}
+}
